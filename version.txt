@@ -1,0 +1,36 @@
+# UTF-8
+#
+# For more details about fixed file info 'StringFileInfo' and 'VarFileInfo' fields,
+# see https://docs.microsoft.com/en-us/windows/win32/menurc/versioninfo-resource
+VSVersionInfo(
+    ffi=FixedFileInfo(
+        filevers=(1, 0, 0, 0),
+        prodvers=(1, 0, 0, 0),
+        mask=0x3f,
+        flags=0x0,
+        OS=0x40004,
+        fileType=0x1,
+        subtype=0x0,
+        date=(0, 0)
+    ),
+    kids=[
+        StringFileInfo(
+            [
+                StringTable(
+                    '040904B0',
+                    [
+                        StringStruct('CompanyName', 'Lunarixus'),
+                        StringStruct('FileDescription', 'PSN Update Package Downloader'),
+                        StringStruct('FileVersion', '1.0.0.0'),
+                        StringStruct('InternalName', 'main'),
+                        StringStruct('LegalCopyright', '© 2023 Lunarixus. All rights reserved.'),
+                        StringStruct('OriginalFilename', 'main.exe'),
+                        StringStruct('ProductName', 'PSN Update Package Downloader'),
+                        StringStruct('ProductVersion', '1.0.0.0')
+                    ]
+                )
+            ]
+        ),
+        VarFileInfo([VarStruct('Translation', [1033, 1200])])
+    ]
+)
